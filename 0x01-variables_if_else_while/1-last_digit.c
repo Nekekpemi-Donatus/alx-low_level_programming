@@ -30,7 +30,7 @@ else if (l == 0)
 
 else 
 {
-	printf("last digit of %d is %d and is less than 6 and not 0\n", n, );
+	printf("last digit of %d is %d and is less than 6 and not 0\n", n, l);
 }
 
 return (0);
