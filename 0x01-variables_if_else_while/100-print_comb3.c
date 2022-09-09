@@ -3,6 +3,8 @@
 /**
  * main - Entry point
  *
+ *a program that prints all possible different combinations of two digits.
+ *
  * Return: Always 0 (Success/correct)
  */
 
@@ -22,7 +24,7 @@ for (num_1 = 0; num_1 < 9; num_1++)
 
 		putchar(',');
 
-		putchar(' ');	
+		putchar(" ");	
 	}
 }
 
