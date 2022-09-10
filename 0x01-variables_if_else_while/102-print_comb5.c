@@ -20,7 +20,7 @@ putchar ((num_1 / 10) + '0');
 putchar ((num_1 % 10) + '0');
 putchar (' ');
 putchar ((num_2 / 10) + '0');
-putchar ((num_2 % 10) + '0')
+putchar ((num_2 % 10) + '0');
 
 if (num_1 == 98 && num_2 == 99)
 continue;
