@@ -16,8 +16,8 @@ void times_table(void)
 			_putchar(',');
 			_putchar(' ');
 
-			prod = mun * mult;
-			if (prod ,= 9)
+			prod = num * mult;
+			if (prod = 9)
 				_putchar(' ');
 			else
 				_putchar((prod / 10) + '0');
