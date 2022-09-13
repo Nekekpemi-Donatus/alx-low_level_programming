@@ -2,7 +2,7 @@
 
 /**
  * _islower - function to check a lowercase character
- *@C:	is the int that will be use as the arguement of the function
+ *@c:	is the int that will be use as the arguement of the function
  * Return: Always 0 (Success)
  */
 
