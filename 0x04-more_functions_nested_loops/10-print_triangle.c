@@ -1,34 +1,37 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
- * main - function that print numbers and names.
- * Reture: return 0
+ * print_triangle - function that draws a triangle line on the terminal.
+ * @size: used parameter
+ * Reture: return nothing
  */
-
-int main(void)
+void print_triangle(int size)
 {
-	int num = 1;
+	int inc1, inc2;
 
-	while (num++ < 100)
+	if (size > 0)
 	{
-		if ((num % 3 == 0) && (num % 5 == 0))
+		for (inc1 = 1; inc1 < size; inc1++)
 		{
-			printf("FizzBuzz ");
-		}
-		else if ((num % 3) == 0)
-		{
-			printf("Fizz ");
-		}
-		else if ((num % 5) == 0)
-		{
-			if (num != 100)
+			for ((inc2 = size - inc1); inc2 > 0; inc2--)
 			{
-				printf("Buzz ");
+				putchar(' ');
 			}
-			else
+
+			for (inc2 = 0; inc2 < inc1; inc2++)
 			{
-				printf("\n");
+				putchar('#');
+			}
+
+			if (inc1 == size)
+			{
+				continue;
 			}
 		}
+	}
+	else
+	{
+		putchar('\n');
 	}
 }
