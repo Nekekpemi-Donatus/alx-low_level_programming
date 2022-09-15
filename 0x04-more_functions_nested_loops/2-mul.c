@@ -4,7 +4,8 @@
  * mul - function that multiplies two integers.
  * @a: first number
  * @b: second number
- * Reture: return result
+ *
+ * Reture: addition of a and b
  */
 
 int mul(int a, int b)

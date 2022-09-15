@@ -1,37 +1,29 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
- * print_triangle - function that draws a triangle line on the terminal.
- * @size: used parameter
- * Reture: return nothing
+ * print_triangle - prints a triangle .
+ * @size: size of triangle .
+ *
+ * Return: void
  */
+
+
 void print_triangle(int size)
 {
-	int inc1, inc2;
+	int i, j;
 
-	if (size > 0)
+	if (size <= 0)
+		_putchar('\n');
+	for (i = 1; i <= size; i++)
 	{
-		for (inc1 = 1; inc1 < size; inc1++)
+		for (j = 1; j <= size; j++)
 		{
-			for ((inc2 = size - inc1); inc2 > 0; inc2--)
-			{
-				putchar(' ');
-			}
-
-			for (inc2 = 0; inc2 < inc1; inc2++)
-			{
-				putchar('#');
-			}
-
-			if (inc1 == size)
-			{
-				continue;
-			}
+			if (j <= (size - i))
+				_putchar(' ');
+			else
+				_putchar('#');
 		}
+		_putchar('\n');
 	}
-	else
-	{
-		putchar('\n');
-	}
+
 }
