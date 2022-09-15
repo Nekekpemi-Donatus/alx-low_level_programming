@@ -6,6 +6,7 @@
  * @b: second number
  * Reture: return result
  */
+
 int mul(int a, int b)
 {
 	return (a * b);
