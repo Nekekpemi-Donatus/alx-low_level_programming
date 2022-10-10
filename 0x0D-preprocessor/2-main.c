@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
-/*
+/**
  * main - prints name of the file
  *
  * Return: 0
